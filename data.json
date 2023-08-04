@@ -1,0 +1,40 @@
+{
+	"rows":
+	[
+		{
+			"dia": 1,
+			"vPlaca": "ABC-1231",
+			"vDescricao_veiculo": "CAM. COMPAC. VOLKS",
+			"nPeso": 2.49,
+			"vTipo": "DIURNO"
+		},
+		{
+			"dia": 2,
+			"vPlaca": "CBA-1321",
+			"vDescricao_veiculo": "CAM. COMPAC. VOLKS 17.280",
+			"nPeso": 3.01,
+			"vTipo": "DIURNO"
+		},
+		{
+			"dia": 3,
+			"vPlaca": "LOP-7894",
+			"vDescricao_veiculo": "CAM. COMPAC. VOLKS 17.281",
+			"nPeso": 6.42,
+			"vTipo": "NOTURNO"
+		},
+		{
+			"dia": 3,
+			"vPlaca": "LOP-7894",
+			"vDescricao_veiculo": "CAM. COMPAC. VOLKS 17.281",
+			"nPeso": 8.89,
+			"vTipo": "NOTURNO"
+		},
+		{
+			"dia": 3,
+			"vPlaca": "LOP-7894",
+			"vDescricao_veiculo": "CAM. COMPAC. VOLKS 17.281",
+			"nPeso": 5.15,
+			"vTipo": "DIURNO"
+		}
+	]
+}
