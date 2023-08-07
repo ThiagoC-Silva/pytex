@@ -1,5 +1,16 @@
-import json
+import json, os
 from openpyxl import Workbook
+
+
+def reportstFolder():
+    reports = 'reports/'
+    if not os.path.exists(reports):
+        os.mkdir(reports)
+
+    file_name = 'report.xlsx'
+    report_path = reports + file_name
+    file_excel.save(report_path) 
+
 
 def cells(vehicle):
     status = False
@@ -55,4 +66,4 @@ for vehicle in object['rows']:
 
 
 print(file_excel.sheetnames)
-file_excel.save("report.xlsx")
+reportstFolder()
