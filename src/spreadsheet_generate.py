@@ -16,6 +16,7 @@ def cells(vehicle):
     status = False
     match_line = 1
     global line
+    
     for record in registered_vehicles:
         match_line += 1
         if(
@@ -57,7 +58,7 @@ spreadsheet.cell(row = line, column = 1, value = 'Day')
 spreadsheet.cell(row = line, column = 2, value = 'Plate')
 spreadsheet.cell(row = line, column = 3, value = 'Description Vehicle')
 spreadsheet.cell(row = line, column = 4, value = 'Day Period')
-spreadsheet.cell(row = line, column = 4, value = 'Weight')
+spreadsheet.cell(row = line, column = 5, value = 'Weight')
 
 
 for vehicle in object['rows']:    
