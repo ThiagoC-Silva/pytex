@@ -19,7 +19,7 @@ vTipoAtual = ""
 vTipoAtualFor = ""
 vPlacaAtualFor = ""
 
-#Cabçalho da planilha
+#Cabeçalho da planilha
 spreadsheet.cell(row=1, column=1, value="Day")
 spreadsheet.cell(row=1, column=2, value="Plate")
 spreadsheet.cell(row=1, column=3, value="Vehicle")
