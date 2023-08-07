@@ -1,6 +1,8 @@
 #Virtual environment
 venv
-#settings used by vscode
+#Settings used by vscode
 .vscode
-#geneated spreadsheet
+#Geneated spreadsheet
 report.xlsx
+#Reports folder
+report
