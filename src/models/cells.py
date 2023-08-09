@@ -7,15 +7,21 @@ class Cells:
         self.weight = weight
 
 
-    def check_records(self, record_table):
+    def check_records(self, record_table, line):
         status = False
+        match_line = 1
         for data_records in record_table:
+            match_line += 1
             if (
-                self.day == data_records.day and 
-                self.plate == data_records.plate and 
-                self.day_period == data_records.day_period
+                self.day == data_records['Day'] and 
+                self.plate == data_records['Plate'] and 
+                self.day_period == data_records['Day Period']
             ):
                 status = True
-                break
-        return status
+                return status, match_line
+        
+        return status, line
             
+
+        
+        

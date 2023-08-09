@@ -1,8 +1,5 @@
-#Virtual environment
 venv
-#Settings used by vscode
 .vscode
-#Geneated spreadsheet
 report.xlsx
-report
+reports
 __pycache__
