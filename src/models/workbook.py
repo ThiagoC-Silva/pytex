@@ -11,7 +11,7 @@ class WorkbookGenerator:
     def create_header(self, header):
         for col, val in enumerate(header, start = 1):
             self.worksheet.cell(row = 1, column = col, value = val)
-            print(col, val)
+            
         self.save_reports_in_folder()
 
     
