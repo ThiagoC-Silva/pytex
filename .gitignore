@@ -4,5 +4,5 @@ venv
 .vscode
 #Geneated spreadsheet
 report.xlsx
-#Reports folder
 report
+__pycache__
