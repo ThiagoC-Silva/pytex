@@ -15,15 +15,13 @@ with open('src/data.json', 'r') as file:
 
 
 for data_row in data['rows']:
-
-    data_vehicle = Cells(
+    data_row = Cells(
         data_row['Day'], 
         data_row['Plate'], 
         data_row['Description Vehicle'], 
         data_row['Day Period'], 
         data_row['Weight']
     )
-    status =  data_vehicle.check_records(record_table)
-
-    record_table.append(data_vehicle)
-    print(status)
+    status = data_row.check_records(record_table)
+    record_table.append(data_row)
+    

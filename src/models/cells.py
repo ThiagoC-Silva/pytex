@@ -11,9 +11,9 @@ class Cells:
         status = False
         for data_records in record_table:
             if (
-                self.day == data_records['Day'] and 
-                self.plate == data_records['Plate'] and 
-                self.day_period == data_records['Day Period']
+                self.day == data_records.day and 
+                self.plate == data_records.plate and 
+                self.day_period == data_records.day_period
             ):
                 status = True
                 break
