@@ -9,10 +9,8 @@ line = 2
 header = ['Day', 'Plate', 'Vehicle', 'Day Period', 'Weight']
 workbook = WorkbookGenerator(header)
 
-
 with open('src/data.json', 'r') as file:
     data =  json.load(file)
-
 
 for data_row in data['rows']:
     data_vehicle = Cells(
@@ -28,6 +26,4 @@ for data_row in data['rows']:
 
     workbook.insertion_cells(data_row, status, line)
     line += 1
-
-    
-    
+ 

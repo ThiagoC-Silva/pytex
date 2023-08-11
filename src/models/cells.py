@@ -21,7 +21,3 @@ class Cells:
                 return status, match_line
         
         return status, line
-            
-
-        
-        

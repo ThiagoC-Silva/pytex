@@ -3,3 +3,4 @@ venv
 report.xlsx
 reports
 __pycache__
+.pytest_cache
