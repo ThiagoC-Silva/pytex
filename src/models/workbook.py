@@ -7,6 +7,7 @@ class WorkbookGenerator:
         self.workbook = Workbook()
         self.worksheet = self.workbook.active
         self.worksheet.title = 'Report'
+        self.header = header
         self.create_header(header)
 
 
@@ -18,7 +19,7 @@ class WorkbookGenerator:
     
     def insertion_cells(self,data_row, status, line):
         if status == False:
-            for col, val in enumerate(data_row.values() , start = 1):
+            for col, val in enumerate(data_row.values(), start = 1):
                 self.worksheet.cell(row = line, column = col, value = val )
         else:
             add_weight = len(data_row) + 1
