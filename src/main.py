@@ -23,7 +23,6 @@ for data_row in data['rows']:
     status, line = data_vehicle.check_records(record_table, line)
     if status == False:
         record_table.append(data_row)
-
     workbook.insertion_cells(data_row, status, line)
     line += 1
  

@@ -9,7 +9,7 @@ class Cells:
 
     def check_records(self, record_table, line):
         status = False
-        match_line = 1
+        match_line = 1 
         for data_records in record_table:
             match_line += 1
             if (
