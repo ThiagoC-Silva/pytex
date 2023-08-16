@@ -37,3 +37,4 @@ class WorkbookGenerator:
         file_name = 'report.xlsx'
         path_folder = reports + file_name
         self.workbook.save(path_folder)
+        return path_folder

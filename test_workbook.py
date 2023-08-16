@@ -1,3 +1,4 @@
+import os
 from pytest import fixture
 from src.models.workbook import WorkbookGenerator 
 
@@ -29,3 +30,9 @@ def test_insertion_cells_status(test_workbook):
     update_column = test_workbook.worksheet.max_column 
     assert update_column == initial_columns + 1
     assert test_workbook.worksheet.cell(row = 2, column = update_column).value == data_test['Weight']
+
+
+def test_save_reports_in_folder(test_workbook):
+    path_folder = test_workbook.save_reports_in_folder()
+    assert os.path.exists(path_folder) == True
+    
