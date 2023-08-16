@@ -20,9 +20,12 @@ for data_row in data['rows']:
         data_row['Day Period'], 
         data_row['Weight']
     )
-    status, line = data_vehicle.check_records(record_table, line)
+    status, match_line = data_vehicle.check_records(record_table)
+
     if status == False:
         record_table.append(data_row)
-    workbook.insertion_cells(data_row, status, line)
-    line += 1
- 
+        workbook.insertion_cells(data_row, status, line)
+        line += 1
+    else:
+        workbook.insertion_cells(data_row, status, match_line)
+    

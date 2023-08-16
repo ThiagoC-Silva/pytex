@@ -7,7 +7,7 @@ class Cells:
         self.weight = weight
 
 
-    def check_records(self, record_table, line):
+    def check_records(self, record_table):
         status = False
         match_line = 1 
         for data_records in record_table:
@@ -18,6 +18,6 @@ class Cells:
                 self.day_period == data_records['Day Period']
             ):
                 status = True
-                return status, match_line
+                break
         
-        return status, line
+        return status, match_line
